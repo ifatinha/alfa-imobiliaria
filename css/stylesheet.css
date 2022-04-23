@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Raleway:wght@100&display=swap');
+
+:root {
+    --black : #000000;
+    --blue  : #14213D;
+    --yellow: #FCA311;
+    --gray  : #E5E5E5;
+    --white : #ffffff;
+}
+
+html,
+body,
+main,
+div,
+section,
+header,
+nav,
+a,
+p,
+h1,
+h2,
+h3,
+nav,
+footer,
+img,
+hr {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position       : fixed;
+    width          : 100%;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+
+header nav {
+    margin    : 1%;
+    max-width : 50%;
+    width     : 50%;
+    text-align: center;
+}
+
+header nav a {
+    padding       : 2%;
+    color         : var(--white);
+    text-transform: uppercase;
+    font-family   : 'Outfit', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    height             : 100vh;
+    flex-direction     : column;
+    justify-content    : center;
+    align-items        : center;
+    background         : linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("../images/background.jpg");
+    background-position: center;
+    background-size    : cover;
+    color              : var(--white);
+    font-family        : 'Raleway', sans-serif;
+    padding-left       : 5%;
+}
+
+main h2 {
+    font-size     : 6em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+main p {
+    font-size: 2em;
+}
+
+section {
+    font-family   : 'Outfit', sans-serif;
+    flex-direction: column;
+    padding       : 3%;
+}
+
+section h3 {
+    font-size     : 1.8em;
+    margin-bottom : 1%;
+    color         : var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.textos-secao {
+    margin-top    : 2%;
+    font-size     : 1.1em;
+    letter-spacing: 0.1em;
+}
+
+.section-imoveis {
+    flex-direction : row;
+    justify-content: space-around;
+    margin-top     : 2%;
+    flex-wrap      : wrap;
+}
+
+.section-imoveis .imovel-card {
+    width     : 30%;
+    margin    : 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.imovel-card img {
+    width: 100%;
+}
+
+.imovel-card p {
+    padding: 3% 0;
+    color  : var(--blue);
+}
+
+.secao-corretores {
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.secao-corretores .card-corretores {
+    margin        : 3% 1% 0;
+    color         : var(--black);
+    flex-direction: column;
+}
+
+.card-corretores img {
+    width: 100%;
+}
+
+.card-corretores .descricao {
+    flex-direction: column;
+    flex-basis    : auto;
+    flex-shrink   : 1;
+    flex-grow     : 1;
+    margin-top    : 5%;
+}
+
+.card-corretores .descricao .texto-nome {
+    font-size: 1.4em;
+}
+
+.card-corretores .descricao .texto-profissao {
+    margin-top: 5%;
+    color     : var(--yellow);
+}
+
+.card-corretores .descricao .texto-descricao {
+    margin     : 5% 0;
+    line-height: 1.6em;
+}
+
+.card-corretores a {
+    background-color: var(--yellow);
+    width           : 100%;
+    text-align      : center;
+    text-transform  : uppercase;
+    padding         : 2%;
+    cursor          : pointer;
+    color           : var(--white);
+}
+
+.card-corretores a:hover {
+    background-color: var(--blue);
+    transition      : 0.5s;
+}
+
+.section-contato {
+    flex-direction: column;
+}
+
+.section-contato p {
+    margin: 2% 0;
+}
+
+.section-contato input {
+    margin-bottom: 2%;
+    padding      : 1%;
+    border       : 1px solid var(--black);
+    color        : var(--blue);
+}
+
+.section-contato a {
+    background-color: var(--yellow);
+    width           : 15%;
+    text-align      : center;
+    text-transform  : uppercase;
+    color           : var(--white);
+    padding         : 1%;
+}
+
+.section-contato a:hover {
+    background-color: var(--blue);
+    transition      : 0.5s;
+}
+
+footer {
+    background-color: var(--blue);
+    color           : var(--white);
+    font-family     : 'Outfit', sans-serif;
+    flex-direction  : column;
+    padding         : 3%;
+}
+
+.container-informacoes {
+    flex-direction : row;
+    justify-content: space-between;
+    margin-bottom  : 2%;
+}
+
+.container-informacoes .box-rodape {
+    width: 30%;
+}
+
+.container-informacoes .box-rodape .texto-titulo-rodape {
+    text-transform: uppercase;
+    font-size     : 1.7em;
+    letter-spacing: 0.1em;
+    margin-bottom : 2%;
+}
+
+.container-informacoes .box-rodape .texto-span {
+    color: var(--yellow);
+}
+
+.container-informacoes .box-iframe iframe {
+    width     : 100%;
+    height    : auto;
+    margin-top: 2%;
+}
+
+.box-rodape .texto-redes-socias {
+    margin-bottom: 2%;
+}
+
+.texto-politica {
+    padding: 2% 0;
+}
+
+.texto-politica a {
+    color       : var(--yellow);
+    margin-right: 1%;
+    cursor      : pointer;
+}
+
+.texto-copyright {
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 500px) {
+
+    header nav {
+        display: none;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+
+    main p {
+        margin-top : 1%;
+        font-size  : 1em;
+        font-weight: 600;
+    }
+
+    .textos-secao {
+        margin-bottom: 2%;
+    }
+
+    .section-imoveis {
+        flex-direction: column;
+    }
+
+    .section-imoveis .imovel-card {
+        width: 100%;
+    }
+
+    .secao-corretores {
+        flex-direction: column;
+    }
+
+    .section-contato a {
+        width: 100%;
+    }
+
+    footer .container-informacoes {
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    footer .container-informacoes .box-rodape {
+        width     : 100%;
+        margin    : 3% 0;
+        text-align: center;
+    }
+
+    footer .texto-politica,
+    footer .texto-copyright {
+        font-size: 0.9em;
+    }
+
+    footer .texto-politica a {
+        display: block;
+    }
+
+}
